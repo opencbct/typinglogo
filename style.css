@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=position')
-*{
+@import url('https://fonts.googleapis.com/css2?family=position');
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +15,7 @@ body{
 .wrapper{
   display: inline-flex;
 }
-.wrapper static-txt{ 
+.wrapper .static-txt{ 
   color: #fff;
   font-size: 60px;
   font-weight: 400;
@@ -26,7 +26,7 @@ body{
   line-height: 90px;
   overflow: hidden;
 }
-.dynamics-txta li{
+.dynamic-txts li{
   color: #FC6D6D;
   list-style: none;
   font-size: 60px;
@@ -34,8 +34,8 @@ body{
   position: relative;
   top: 0;
   animation: slide 6s steps(4) infinite;
-  }
-  @keyframes slide {
+}
+@keyframes slide {
     100%{
       top: -360px;
     }
@@ -43,7 +43,7 @@ body{
 .dynamic-txts li span{
   position: relative;
 }
-.dynamics-txts li span::after{
+.dynamic-txts li span::after{
   content: "";
   position: absolute;
   left: 0;
@@ -51,7 +51,7 @@ body{
   width: 100%;
   background: #343F4F;
   border-left: 2px solid #FC6D6D;
-  ç
+  animation: typing 1.5s steps(10) infinite;
 }
 @keyframes typing {
   100%{
